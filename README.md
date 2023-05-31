@@ -4,7 +4,7 @@ A project to help me learn at least the basics of game-dev,networking-socket-pro
 milestones to keep track of while developing the Flappy Bird clone with multiplayer functionality and web implementation:
     will tick off each one after completion.
 
-    Week 1-2: Familiarization and Single-Player Version
+Week 1-2: Familiarization and Single-Player Version
 During these two weeks, I will focus on getting familiar with Pygame and grasping the basic concepts of game development. I will start by studying Pygame's documentation, exploring its features, and understanding how it can be used to create games. My primary goal will be to develop a single-player version of Flappy Bird using Pygame. This will involve implementing essential game elements such as bird movement, pipes, scoring, collision detection, and game over conditions.
 
 Week 3-4: Multiplayer Functionality
