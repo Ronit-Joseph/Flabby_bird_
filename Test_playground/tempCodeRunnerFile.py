@@ -12,12 +12,18 @@ from pygame.locals import(
 
 pygame.init()
 
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
+SCREEN_WIDTH = 868
+SCREEN_HEIGHT = 936
 
 screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
+pygame.display.set_caption("Flabby bird")
 
 running = True
+bg = pygame.image.load('img/bg.png')
+ground_img = pygame.image.load('img/ground.png')
+
+screen.blit(bg,(0,0))
+screen.blit(ground_img,(0,768))
 
 while running:
     #look at every event in the queue
@@ -30,23 +36,9 @@ while running:
         
         elif(event.type == QUIT):
                 running = False
-        #fill the entire screen white,the screen is a surface                
-        screen.fill((255,255,255)) 
-        
-        surf = pygame.Surface((100,100))
-        surf.fill((0,0,0))
-        rect = surf.get_rect()
-        surf_center = (
-
-        (SCREEN_WIDTH-surf.get_width())/2,
-
-        (SCREEN_HEIGHT-surf.get_height())/2
-
-        )
-        screen.blit(surf,surf_center)
-        pygame.display.flip()
-        
-        
+          
+    
+    pygame.display.flip() 
 
                 
         
